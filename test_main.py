@@ -4,6 +4,7 @@ import pygame
 
 
 class MyTestCase(unittest.TestCase):
+    #Хабибуллина Азалия
     def test_something(self):
         main.start_game()
         assert pygame.mixer.music.get_busy()
@@ -12,7 +13,7 @@ class MyTestCase(unittest.TestCase):
         main.hero.rect.topleft = 100, 450
         main.wall1.rect.topleft = 100, 450
         assert main.check_lose()
-
+#Манина Елизавета
     def test_no_lose(self):
         main.hero.rect.topleft = 200, 450
         main.wall1.rect.topleft = 400, 450
